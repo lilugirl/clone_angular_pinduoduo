@@ -4,7 +4,10 @@ ul{
     display:flex;
     
     > li{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         margin:0 5px;
         white-space: nowrap;
     }
@@ -23,5 +26,12 @@ a{
 }
 .even{
    
-    color:aquamarine;
+   
+}
+
+.indicator{
+    height:2px;
+    background-color: brown;
+    width:2rem;
+    margin-top:2px;
 }

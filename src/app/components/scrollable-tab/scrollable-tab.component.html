@@ -1,8 +1,14 @@
 <div>
     <ul>
       <li *ngFor="let item of tabs; let i=index; let f=first;let even=even;">
-        <a  (click)="selectedIndex=i" [class.even]="even" [class.active]="i===selectedIndex">
-          {{item.title}}</a>
+        <a  (click)="handleSelection(i)" [class.even]="even" [class.active]="i===selectedIndex">
+          {{item.title}}
+        </a>
+
+        <span class="indicator" *ngIf="i===selectedIndex"></span>
+        
         </li>
+        
     </ul>
+   
   </div>
