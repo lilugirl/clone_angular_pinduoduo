@@ -1,11 +1,11 @@
 <div>
-    <ul>
-      <li *ngFor="let item of tabs; let i=index; let f=first;let even=even;">
-        <a  (click)="handleSelection(i)" [class.even]="even" [class.active]="i===selectedIndex">
+    <ul [ngStyle]="{'background-color':backgroundColor}">
+      <li *ngFor="let item of tabs; let i=index; let f=first;let even=even;let odd=odd" [ngClass]="{'even':even,'odd':odd}">
+        <a [ngStyle]="{color:selectedIndex===i?titleActiveColor:titleColor}"  (click)="handleSelection(i)" >
           {{item.title}}
         </a>
 
-        <span class="indicator" *ngIf="i===selectedIndex"></span>
+        <span class="indicator" [ngStyle]="{'background-color':indicatorColor}" *ngIf="i===selectedIndex"></span>
         
         </li>
         

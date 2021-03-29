@@ -22,16 +22,19 @@ a{
 }
 
 .active{
-    color:red;
+   
 }
 .even{
+   font-weight: bold;
    
-   
+}
+
+.odd{
+  text-decoration: underline;
 }
 
 .indicator{
     height:2px;
-    background-color: brown;
     width:2rem;
     margin-top:2px;
 }
