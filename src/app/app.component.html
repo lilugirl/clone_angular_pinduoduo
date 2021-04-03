@@ -1,3 +1,3 @@
-<div>
- <app-scrollable-tab titleColor="#fff" titleActiveColor="yellow" indicatorColor="yellow" backgroundColor="red" [tabs]="topMenus" (tabSelected)="handleTabSelected($event)"></app-scrollable-tab>
-</div>
+<app-scrollable-tab  titleColor="#fff" titleActiveColor="yellow" indicatorColor="yellow" [backgroundColor]="scrollableTabBgColor" [tabs]="topMenus" (tabSelected)="handleTabSelected($event)">
+ </app-scrollable-tab>
+ <app-image-silder [silders]="imageSliders"></app-image-silder>
