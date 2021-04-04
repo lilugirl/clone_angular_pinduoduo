@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import {ImageSilder, ImageSilderComponent, TopMenu} from './components'
+import {ImageSilder, ImageSilderComponent, TopMenu} from './shared/components'
 
 
 @Component({
@@ -8,7 +8,8 @@ import {ImageSilder, ImageSilderComponent, TopMenu} from './components'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- @ViewChild(ImageSilderComponent) imageSlider:ImageSilderComponent
+ @ViewChild(ImageSilderComponent) imageSlider:ImageSilderComponent;
+ username='';
  topMenus:TopMenu[]=[
   {title:'男装',url:'#1'},
   {title:"儿童",url:'#2'},
@@ -73,4 +74,6 @@ export class AppComponent {
    this.scrollableTabBgColor=colors[idx];
    console.log('handleTabSelected',topMenu);
  }
+
+
 }

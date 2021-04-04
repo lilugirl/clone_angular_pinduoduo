@@ -1,3 +1,7 @@
 <app-scrollable-tab  titleColor="#fff" titleActiveColor="yellow" indicatorColor="yellow" [backgroundColor]="scrollableTabBgColor" [tabs]="topMenus" (tabSelected)="handleTabSelected($event)">
  </app-scrollable-tab>
  <app-image-silder [silders]="imageSliders"></app-image-silder>
+ <app-horizontal-grid [(username)]="username"></app-horizontal-grid>
+ <app-horizontal-grid [username]="username"  (usernameChange)="username=$event"></app-horizontal-grid>
+ app的{{username}}
+
