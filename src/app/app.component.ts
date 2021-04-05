@@ -134,6 +134,30 @@ export class AppComponent {
     title:'秒杀',
     icon:'https://iconutopia.com/wp-content/uploads/2016/06/planet1.png',
     link:''
+  },
+  {
+    id:13,
+    title:'限时秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/icon-design-guide.png',
+    link:'hot'
+  },
+  {
+    id:14,
+    title:'断货清仓',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png',
+    link:''
+  },
+  {
+    id:15,
+    title:'多多果园',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/rocket-book.png',
+    link:''
+  },
+  {
+    id:16,
+    title:'秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/planet1.png',
+    link:''
   }
 ];
 

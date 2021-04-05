@@ -1,4 +1,32 @@
-:host{
-    display:flex;
-    overflow-x: auto;
+.container{
+    background-color: #fff;
+    padding: 5px 0;
+    overflow-x:auto;
+    overflow-y: hidden;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    place-content: stretch;
+    display: grid;
+    place-items:center;
+    grid-gap:0.4rem;
+    grid-auto-flow:row;
+
+    &::-webkit-scrollbar{
+        display:none !important;
+    }
+}
+
+.underline{
+    width:20%;
+    height:2px;
+    background-color: #4b1c1c;
+    margin:0 auto;
+
+    .highlight{
+        width:50%;
+        height:2px;
+        background-color: #e02f29;
+        padding:0;
+    }
+
 }
