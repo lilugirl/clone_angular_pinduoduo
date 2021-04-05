@@ -9,7 +9,6 @@ import {ImageSilder, ImageSilderComponent, TopMenu} from './shared/components'
 })
 export class AppComponent {
  @ViewChild(ImageSilderComponent) imageSlider:ImageSilderComponent;
- username='';
  topMenus:TopMenu[]=[
   {title:'男装',url:'#1'},
   {title:"儿童",url:'#2'},

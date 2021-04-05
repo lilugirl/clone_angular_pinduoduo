@@ -1,3 +1,4 @@
-<input [value]="username" (input)="handleInput($event)" /> 你好 {{username}}
-
-{{result}}
+<div appGridItem *ngFor="let item of channels">
+    <img [src]="item.icon" alt="" [appGridItemImage]="'4rem'" [fitMode]="'none'">
+    <span appGridItemTitle>{{item.title}}</span>
+</div>
