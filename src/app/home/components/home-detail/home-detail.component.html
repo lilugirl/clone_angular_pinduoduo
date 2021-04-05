@@ -1,4 +1,5 @@
-<app-image-silder [silders]="imageSliders"></app-image-silder>
+<div *ngIf="selectedTabLink==='hot' else other">
+  <app-image-silder [silders]="imageSliders"></app-image-silder>
 <app-horizontal-grid>
   <span appGridItem *ngFor="let item of channels">
     <img
@@ -10,3 +11,9 @@
     <span appGridItemTitle="0.6rem">{{ item.title }}</span>
   </span>
 </app-horizontal-grid>
+
+</div>
+<ng-template #other>
+  other works
+</ng-template>
+

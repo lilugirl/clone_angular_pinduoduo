@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Channel, ImageSilder, TopMenu } from 'src/app/shared/components';
 
 @Component({
@@ -7,10 +8,19 @@ import { Channel, ImageSilder, TopMenu } from 'src/app/shared/components';
   styleUrls: ['./home-detail.component.scss']
 })
 export class HomeDetailComponent implements OnInit {
+  selectedTabLink:string| null='hot';
 
-  constructor() { }
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.paramMap.subscribe(params=>{
+      console.log('路径参数params',params);
+      this.selectedTabLink=params.get('tabLink');
+    });
+
+    this.route.queryParamMap.subscribe(params=>{
+      console.log('查询参数',params);
+    })
   }
 
   imageSliders:ImageSilder[]=[

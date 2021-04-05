@@ -2,8 +2,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 
 
 export interface TopMenu{
-  title:string;
-   url?:string;
+   id:number;
+   title:string;
+   link:string;
  }
  
 
