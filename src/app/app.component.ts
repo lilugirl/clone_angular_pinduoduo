@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import {ImageSilder, ImageSilderComponent, TopMenu} from './shared/components'
+import {Channel, ImageSilder, ImageSilderComponent, TopMenu} from './shared/components'
 
 
 @Component({
@@ -61,6 +61,81 @@ export class AppComponent {
     caption:''
   }
  ];
+
+ channels:Channel[]=[
+  {
+    id:1,
+    title:'限时秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/icon-design-guide.png',
+    link:'hot'
+  },
+  {
+    id:2,
+    title:'断货清仓',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png',
+    link:''
+  },
+  {
+    id:3,
+    title:'多多果园',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/rocket-book.png',
+    link:''
+  },
+  {
+    id:4,
+    title:'秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/planet1.png',
+    link:''
+  },
+  {
+    id:5,
+    title:'限时秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/icon-design-guide.png',
+    link:'hot'
+  },
+  {
+    id:6,
+    title:'断货清仓',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png',
+    link:''
+  },
+  {
+    id:7,
+    title:'多多果园',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/rocket-book.png',
+    link:''
+  },
+  {
+    id:8,
+    title:'秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/planet1.png',
+    link:''
+  },
+  {
+    id:9,
+    title:'限时秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/icon-design-guide.png',
+    link:'hot'
+  },
+  {
+    id:10,
+    title:'断货清仓',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png',
+    link:''
+  },
+  {
+    id:11,
+    title:'多多果园',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/rocket-book.png',
+    link:''
+  },
+  {
+    id:12,
+    title:'秒杀',
+    icon:'https://iconutopia.com/wp-content/uploads/2016/06/planet1.png',
+    link:''
+  }
+];
 
  
  ngAfterViewInit(){

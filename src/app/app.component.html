@@ -1,4 +1,14 @@
 <app-scrollable-tab  titleColor="#fff" titleActiveColor="yellow" indicatorColor="yellow" [backgroundColor]="scrollableTabBgColor" [tabs]="topMenus" (tabSelected)="handleTabSelected($event)">
  </app-scrollable-tab>
  <app-image-silder [silders]="imageSliders"></app-image-silder>
-<app-horizontal-grid></app-horizontal-grid>
+<app-horizontal-grid>
+    <span appGridItem *ngFor="let item of channels">
+        <img [src]="item.icon" alt="" [appGridItemImage]="'2rem'" [fitMode]="'cover'" >
+        <span appGridItemTitle="0.6rem">{{item.title}}</span>
+    </span>
+
+    <div>
+       <img src="" appGridItemImage="2rem"  />
+       <span appGridItemTitle="1rem">Hello</span>
+    </div>
+</app-horizontal-grid>
