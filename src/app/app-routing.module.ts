@@ -4,7 +4,7 @@ import { HomeContainerComponent } from './home/components';
 
 const routes: Routes = [
   {
-    path:'',component:HomeContainerComponent
+    path:'',redirectTo:'home',pathMatch:'full'
   }
    
 ];
